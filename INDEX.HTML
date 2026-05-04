@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Nest Real Estate</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+header h1{
+    font-size:75px;
+    color:#ffb347;
+    text-shadow:2px 2px 8px black;
+}
+
+header p{
+    width:70%;
+    margin-top:20px;
+    line-height:1.8;
+    font-size:20px;
+}
+
+nav{
+    background:#1d6b35;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffb347;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#1d6b35;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#ff8c00;
+    margin-bottom:12px;
+}
+
+.card-content p{
+    line-height:1.7;
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    background:#1d6b35;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff8c00;
+}
+
+.features{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.feature-box{
+    background:white;
+    padding:20px;
+    width:220px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.15);
+    font-weight:bold;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+footer{
+    background:#1d6b35;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:45px;
+}
+
+header p{
+    width:90%;
+    font-size:16px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header id="home">
+    <h1>Urban Nest</h1>
+
+    <p>
+        Welcome to Urban Nest Real Estate. Explore premium bungalows,
+        luxury buildings, modern flat systems, and affordable land properties.
+        We provide peaceful homes, smart city apartments, and beautiful land
+        locations with world-class facilities.
+    </p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bungalows">Bungalows</a></li>
+        <li><a href="#buildings">Buildings</a></li>
+        <li><a href="#lands">Land</a></li>
+    </ul>
+</nav>
+
+<!-- BUNGALOW SECTION -->
+<section id="bungalows">
+
+    <div class="section-title">
+        <h2>Luxury Bungalows</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Green Valley Bungalow</h3>
+                <p>Peaceful bungalow surrounded by greenery and nearby schools.</p>
+                <p><strong>Location:</strong> Pokhara</p>
+                <a href="#" class="btn">View Property</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Sunrise Heritage Villa</h3>
+                <p>Heritage-style luxury villa near museums and tourist attractions.</p>
+                <p><strong>Location:</strong> Kathmandu</p>
+                <a href="#" class="btn">View Property</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>City Edge Residence</h3>
+                <p>Modern bungalow close to business centers and hospitals.</p>
+                <p><strong>Location:</strong> Butwal</p>
+                <a href="#" class="btn">View Property</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Royal Garden House</h3>
+                <p>Beautiful family bungalow with private garden and swimming area.</p>
+                <p><strong>Location:</strong> Chitwan</p>
+                <a href="#" class="btn">View Property</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Lake Side Villa</h3>
+                <p>Premium bungalow with peaceful lake views and fresh environment.</p>
+                <p><strong>Location:</strong> Dharan</p>
+                <a href="#" class="btn">View Property</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Urban Premium Home</h3>
+                <p>Luxury bungalow with smart interiors and modern security systems.</p>
+                <p><strong>Location:</strong> Lalitpur</p>
+                <a href="#" class="btn">View Property</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BUILDING SECTION -->
+<section id="buildings">
+
+    <div class="section-title">
+        <h2>Modern Buildings & Flat Systems</h2>
+    </div>
+
+    <div class="features">
+        <div class="feature-box">Swimming Pool</div>
+        <div class="feature-box">Playground</div>
+        <div class="feature-box">24/7 Security</div>
+        <div class="feature-box">Gym Facility</div>
+        <div class="feature-box">School Nearby</div>
+        <div class="feature-box">Parking Area</div>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+    </div>
+
+</section>
+
+<!-- LAND SECTION -->
+<section id="lands">
+
+    <div class="section-title">
+        <h2>Land Properties</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Commercial Land</h3>
+                <p>Affordable commercial land near developing business areas.</p>
+                <p><strong>Location:</strong> Nepalgunj</p>
+                <a href="#" class="btn">Buy Land</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Residential Plot</h3>
+                <p>Perfect land for family homes with peaceful surroundings.</p>
+                <p><strong>Location:</strong> Bhairahawa</p>
+                <a href="#" class="btn">Buy Land</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Hill View Land</h3>
+                <p>Beautiful scenic land with mountain and green hill views.</p>
+                <p><strong>Location:</strong> Surkhet</p>
+                <a href="#" class="btn">Buy Land</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h2>Urban Nest Real Estate</h2>
+    <p>Your trusted partner for luxury homes, flats, and land properties.</p>
+</footer>
+
+</body>
+</html>
